@@ -3,6 +3,7 @@ name: Test Release
 on:
   release:
     types: [published]
+  workflow_dispatch: # <--- Cette ligne fait apparaître le bouton "Run workflow"
 
 jobs:
   test:
