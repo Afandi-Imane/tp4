@@ -1,0 +1,12 @@
+name: Test Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message
+        run: echo "Nouvelle release publiee !"

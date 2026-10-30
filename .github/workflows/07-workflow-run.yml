@@ -1,0 +1,13 @@
+name: Test Workflow Run
+
+on:
+  workflow_run:
+    workflows: ["Premier workflow"]
+    types: [completed]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message
+        run: echo "Le premier workflow est termine !"

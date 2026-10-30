@@ -1,0 +1,11 @@
+name: Test Manuel
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message
+        run: echo "Workflow lance manuellement !"

@@ -1,0 +1,12 @@
+name: Test Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message
+        run: echo "Nouvelle issue creee !"

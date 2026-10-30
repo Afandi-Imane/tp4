@@ -1,0 +1,12 @@
+name: Test Repository Dispatch
+
+on:
+  repository_dispatch:
+    types: [mon-evenement]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message
+        run: echo "Evenement externe recu !"
